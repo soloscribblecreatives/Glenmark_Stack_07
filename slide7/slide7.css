@@ -12,11 +12,11 @@
 
 .s7_2 {
 	position: absolute;
-  left: 289px;
-  top: 33px;
-  width: 446px;
-  height: 171px;
-	animation: zoomIn 1s;
+  left: 60px;
+  top: 350px;
+  width: 412px;
+  height: 303px;
+	animation: fadeInLeft 1s;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 4;
@@ -24,11 +24,11 @@
 
 .s7_3 {
 	position: absolute;
-  left: 333px;
-  top: 212px;
-  width: 358px;
-  height: 74px;
-	animation: fadeInUp 1s;
+  left: 544px;
+  top: 350px;
+  width: 419px;
+  height: 308px;
+	animation: fadeInRight 1s;
 	animation-delay: 1.5s;
 	animation-fill-mode: both;
 	z-index: 3;
@@ -36,10 +36,10 @@
 
 .s7_4 {
 	position: absolute;
-  left: 95px;
-  top: 338px;
-  width: 834px;
-  height: 368px;
+  left: 99px;
+  top: 389px;
+  width: 337px;
+  height: 285px;
 	animation: fadeInLeft 1s;
 	animation-delay: 2.5s;
 	animation-fill-mode: both;
@@ -48,14 +48,14 @@
 
 .s7_5 {
 	position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 1024px;
-  height: 221px;
-	animation: none 1s;
+  left: 554px;
+  top: 395px;
+  width: 390px;
+  height: 293px;
+	animation: fadeInRight 1s;
 	animation-delay: 3.5s;
 	animation-fill-mode: both;
-	z-index: 5;
+	z-index: 2;
 }
 
 .s7_6 {
@@ -70,7 +70,7 @@
 	position: absolute;
 	height: 100px;
 	width: 150px;
-	right: 270px;
+	right: 0px;
 	bottom: 0px;
 	z-index: 15;
 }

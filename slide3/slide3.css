@@ -12,11 +12,11 @@
 
 .s3_2 {
 	position: absolute;
-  left: 289px;
-  top: 33px;
-  width: 446px;
-  height: 171px;
-	animation: zoomIn 1s;
+  left: 10px;
+  top: 296px;
+  width: 422px;
+  height: 136px;
+	animation: slideInLeft 1s;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 4;
@@ -24,38 +24,38 @@
 
 .s3_3 {
 	position: absolute;
-  left: 333px;
-  top: 212px;
-  width: 358px;
-  height: 74px;
+  left: 26px;
+  top: 440px;
+  width: 253px;
+  height: 166px;
 	animation: fadeInUp 1s;
-	animation-delay: 1.5s;
+	animation-delay: 1s;
 	animation-fill-mode: both;
 	z-index: 3;
 }
 
 .s3_4 {
 	position: absolute;
-  left: 86px;
-  top: 285px;
-  width: 792px;
-  height: 432px;
-	animation: fadeInLeft 1s;
-	animation-delay: 2.5s;
+  left: 372px;
+  top: 323px;
+  width: 597px;
+  height: 276px;
+	animation: zoomIn 1s;
+	animation-delay: 2s;
 	animation-fill-mode: both;
 	z-index: 2;
 }
 
 .s3_5 {
 	position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 1024px;
-  height: 221px;
-	animation: none 1s;
+  left: 528px;
+  top: 373px;
+  width: 427px;
+  height: 292px;
+	animation: fadeInRight 1s;
 	animation-delay: 3.5s;
 	animation-fill-mode: both;
-	z-index: 5;
+	z-index: 2;
 }
 
 
