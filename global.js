@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 10){//number 3 is number of total slides present
+	if(nextSlideNo <= 9){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 10){
+	if(page_id <= 9){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 11){
+		if(page_id == 10){
             flag=1;
         }
 	}
@@ -409,10 +409,7 @@ switch(pg_id){
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide8/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide9/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 10:
-	content='<link rel="stylesheet" type="text/css" href="slide10/slide2.css" media="screen"/><div class="background"><img src="slide10/1.jpg" width="1024" height="768" alt=""></div><div class="refer"><img src="slide10/4.png" alt=""></div><video id="myVideo" class="video" width="1024" height="576" controls autoplay><source src="slide10/2.mp4" type="video/mp4"></video><div class="popup"><img src="slide10/3.jpg" width="1024" height="768" alt=""/></div><div class="pop_open" onclick="pop_open()"></div><div class="pop_close" onclick="pop_close()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide9/slide2.css" media="screen"/><div class="background"><img src="slide9/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 }
 
@@ -485,7 +482,7 @@ function open_page(url,page_id){
 	document.getElementById("click_through").innerHTML='';
 		}
     if(currentslide == 2){
-	document.getElementById("click_through").innerHTML='<link rel="stylesheet" type="text/css" href="slide10/slide2.css" media="screen"/><div class="link7" onclick="checkBtns(1)"></div><div class="link8" onclick="checkBtns(2)"></div>';
+	document.getElementById("click_through").innerHTML='';
 		}
 
 	}
@@ -493,10 +490,7 @@ function open_page(url,page_id){
 	function checkBtns(refNum){
 		switch(refNum){
 			case 1:
-			open_page('',7);
-            break;
-			case 2:
-			open_page('',8);
+			open_page('',1);
             break;
 		}
 	}
@@ -565,14 +559,23 @@ function pop_open() {
 	$('.popup').css('display','block');
 	$('.pop_open').css('display','none');
 	$('.pop_close').css('display','block');
-	var vid = document.getElementById("myVideo");
-	vid.pause();
-	vid.currentTime = 0;
 }
 
 function pop_close() {
 	$('.popup').css('display','none');
 	$('.pop_open').css('display','block');
 	$('.pop_close').css('display','none');
-	document.getElementById("myVideo").play();
 }
+
+
+$(document).on("touchstart",".homebtn1" , function (event) {
+         open_page("",2);
+});
+
+$(document).on("touchstart",".homebtn2" , function (event) {
+         open_page("",5);
+});
+
+$(document).on("touchstart",".homebtn3" , function (event) {
+         open_page("",7);
+});
