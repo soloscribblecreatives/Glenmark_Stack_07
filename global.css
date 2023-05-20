@@ -237,12 +237,3 @@ html[xmlns] .clearfix {
 	background-color: rgba(0,0,0,0.5);
 	color: #ffffff;
 }
-
-.takeHome {
-  position: absolute;
-  left: 902px;
-  top: 730px;
-  width: 33px;
-  height: 38px;
-  z-index: 999;
-}
