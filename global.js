@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 9){//number 3 is number of total slides present
+	if(nextSlideNo <= 4){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 9){
+	if(page_id <= 4){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 10){
+		if(page_id == 5){
             flag=1;
         }
 	}
@@ -385,31 +385,16 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="vid"><img src="slide1/3.png"></div><div class="hit_1"><img src="slide1/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div><div class="popVid1" onclick="popVid1();"></div><video class="vid1" id="vid1" width="1024" height="768" src="slide1/3.mp4" controls></video><div class="closeVid1" onclick="closeVid1();"><img src="slide1/4.png"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="vid"><img src="slide1/3.png"></div><div class="hit_1"><img src="slide1/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide4/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div><div class="popVid1" onclick="popVid1();"></div><video class="vid1" id="vid1" width="1024" height="768" src="slide1/3.mp4" controls></video><div class="closeVid1" onclick="closeVid1();"><img src="slide1/4.png"></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide2/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide2/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_4"><img src="slide2/4.png" width="1024" height="768" alt=""/></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide2/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide4/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide2/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_4"><img src="slide2/4.png" width="1024" height="768" alt=""/></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide3/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide4/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide3/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_4"><img src="slide3/4.png" width="1024" height="768" alt=""/></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
 	break;
 	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
-	break;
-	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
-	break;
-	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
-	break;
-	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide8/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
-	break;
-	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide9/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide9/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide9/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide4/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide4/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide4/2.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_4"><img src="slide4/3.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_5"><img src="slide4/4.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop5" onclick="hit_pop5()"></div><div class="hit_6"><img src="slide4/5.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop6" onclick="hit_pop6()"></div><div class="hit_7"><img src="slide4/6.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop7" onclick="hit_pop7()"></div><div class="hit_8"><img src="slide4/7.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop8" onclick="hit_pop8()"></div><div class="hit_9"><img src="slide4/8.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop9" onclick="hit_pop9()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
 	break;
 }
 
@@ -597,6 +582,18 @@ function hit_pop7() {
 	$('.hit_pop7').css("display","none");
 }
 
+function hit_pop8() {
+	$('.hit_8').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop8').css("display","none");
+}
+
+function hit_pop9() {
+	$('.hit_9').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop9').css("display","none");
+}
+
 function hit_close1() {
 	$('.hit_1').css("display","none");
 	$('.hit_2').css("display","none");
@@ -605,6 +602,8 @@ function hit_close1() {
 	$('.hit_5').css("display","none");
 	$('.hit_6').css("display","none");
 	$('.hit_7').css("display","none");
+	$('.hit_8').css("display","none");
+	$('.hit_9').css("display","none");
 	$('.hit_pop1').css("display","block");
 	$('.hit_pop2').css("display","block");
 	$('.hit_pop3').css("display","block");
@@ -612,6 +611,8 @@ function hit_close1() {
 	$('.hit_pop5').css("display","block");
 	$('.hit_pop6').css("display","block");
 	$('.hit_pop7').css("display","block");
+	$('.hit_pop8').css("display","block");
+	$('.hit_pop9').css("display","block");
 	$('.hit_close1').css("display","none");
 }
 
@@ -620,7 +621,7 @@ function takeCover() {
 }
 
 function takeSum() {
-		open_page("",9);
+		open_page("",4);
 }
 
 
