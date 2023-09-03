@@ -71,7 +71,7 @@
   width: 1024px;
   height: 768px;
   display: none;
-  z-index: 15;
+  z-index: 8;
 }
 
 .hit_pop1 {
@@ -155,13 +155,13 @@
 	z-index: 10;
 } */
 
-.hit_close1 {
+/* .hit_close1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
 	display: none;
 	z-index: 20;
-}
+} */
 
 
 
