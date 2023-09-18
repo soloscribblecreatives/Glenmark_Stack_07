@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 3){//number 3 is number of total slides present
+	if(nextSlideNo <= 2){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 3){
+	if(page_id <= 2){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 4){
+		if(page_id == 3){
             flag=1;
         }
 	}
@@ -385,13 +385,10 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="1/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide1/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="2/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
-	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="3/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide2/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide2/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
 	break;
 }
 
@@ -533,3 +530,44 @@ $(document).ready(function(){
 		$('.touchbtn').css("display","block");
 	})
 })
+
+
+/*--------------------- animation javascript -----------------------*/
+
+function hit_pop1() {
+	$('.hit_1').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop1').css("display","none");
+}
+
+function hit_pop2() {
+	$('.hit_2').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop2').css("display","none");
+}
+
+function hit_close1() {
+	$('.hit_1').css("display","none");
+	$('.hit_2').css("display","none");
+	$('.hit_3').css("display","none");
+	$('.hit_4').css("display","none");
+	$('.hit_5').css("display","none");
+	$('.hit_6').css("display","none");
+	$('.hit_7').css("display","none");
+	$('.hit_pop1').css("display","block");
+	$('.hit_pop2').css("display","block");
+	$('.hit_pop3').css("display","block");
+	$('.hit_pop4').css("display","block");
+	$('.hit_pop5').css("display","block");
+	$('.hit_pop6').css("display","block");
+	$('.hit_pop7').css("display","block");
+	$('.hit_close1').css("display","none");
+}
+
+function takeCover() {
+		open_page("",1);
+}
+
+function takeSum() {
+		open_page("",2);
+}
