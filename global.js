@@ -385,10 +385,10 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide1/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide1/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide2/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide2/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_close1" onclick="hit_close1()"></div><div class="takeCover" onclick="takeCover();"></div><div class="takeSum" onclick="takeSum();"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><div class="hit_1"><img src="slide2/2.png" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide1/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide2/3.png" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
 	break;
 }
 
@@ -531,7 +531,6 @@ $(document).ready(function(){
 	})
 })
 
-
 /*--------------------- animation javascript -----------------------*/
 
 function hit_pop1() {
@@ -546,28 +545,18 @@ function hit_pop2() {
 	$('.hit_pop2').css("display","none");
 }
 
+function hit_pop3() {
+	$('.hit_3').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop3').css("display","none");
+}
+
 function hit_close1() {
 	$('.hit_1').css("display","none");
 	$('.hit_2').css("display","none");
 	$('.hit_3').css("display","none");
-	$('.hit_4').css("display","none");
-	$('.hit_5').css("display","none");
-	$('.hit_6').css("display","none");
-	$('.hit_7').css("display","none");
 	$('.hit_pop1').css("display","block");
 	$('.hit_pop2').css("display","block");
 	$('.hit_pop3').css("display","block");
-	$('.hit_pop4').css("display","block");
-	$('.hit_pop5').css("display","block");
-	$('.hit_pop6').css("display","block");
-	$('.hit_pop7').css("display","block");
 	$('.hit_close1').css("display","none");
-}
-
-function takeCover() {
-		open_page("",1);
-}
-
-function takeSum() {
-		open_page("",2);
 }

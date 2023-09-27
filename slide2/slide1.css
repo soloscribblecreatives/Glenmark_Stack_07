@@ -10,7 +10,7 @@
 	z-index: 1;
 }
 
-.hit_1, .hit_2  {
+.hit_1, .hit_2, .hit_3  {
   position: absolute;
   width: 1024px;
   height: 768px;
@@ -20,7 +20,7 @@
 
 .hit_pop1 {
 	position: absolute;
-  left: 632px;
+  left: 799px;
   top: 667px;
   width: 55px;
   height: 101px;
@@ -29,10 +29,19 @@
 
 .hit_pop2 {
 	position: absolute;
-  left: 689px;
+  left: 856px;
   top: 667px;
   width: 55px;
   height: 101px;
+	z-index: 10;
+}
+
+.hit_pop3 {
+	position: absolute;
+  left: 427px;
+  top: 387px;
+  width: 597px;
+  height: 137px;
 	z-index: 10;
 }
 
