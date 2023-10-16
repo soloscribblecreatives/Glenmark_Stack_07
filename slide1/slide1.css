@@ -10,36 +10,34 @@
 	z-index: 1;
 }
 
-.hit_1, .hit_2  {
-  position: absolute;
-  width: 1024px;
-  height: 768px;
-  display: none;
-  z-index: 15;
-}
-
-.hit_pop1 {
+.video1 {
 	position: absolute;
-  left: 632px;
-  top: 667px;
-  width: 55px;
-  height: 101px;
-	z-index: 10;
+	width: 1024px;
+	height: 670px;
+	z-index:5;
 }
 
-.hit_pop2 {
-	position: absolute;
-  left: 689px;
-  top: 667px;
-  width: 55px;
-  height: 101px;
-	z-index: 10;
-}
-
-.hit_close1 {
+.button1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
+	z-index: 999;
+}
+
+.button2 {
+	position: absolute;
+  left: 313px;
+  top: 256px;
+  width: 415px;
+  height: 313px;
 	display: none;
-	z-index: 20;
+	z-index: 999;
+}
+
+.video2 {
+	position: absolute;
+	width: 1024px;
+	height: 670px;
+	display: none;
+	z-index:10;
 }
