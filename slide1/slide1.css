@@ -10,34 +10,53 @@
 	z-index: 1;
 }
 
-.video1 {
-	position: absolute;
-	width: 1024px;
-	height: 670px;
-	z-index:5;
+.popup1 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  display: none;
+  z-index: 15;
 }
 
-.button1 {
+.pop_open1 {
+	position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 150px;
+  height: 150px;
+	z-index: 10;
+}
+
+.pop_close1 {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-	z-index: 999;
-}
-
-.button2 {
-	position: absolute;
-  left: 313px;
-  top: 256px;
-  width: 415px;
-  height: 313px;
 	display: none;
-	z-index: 999;
+	z-index: 20;
 }
 
-.video2 {
+
+.popup2 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  display: none;
+  z-index: 15;
+}
+
+.pop_open2 {
+	position: absolute;
+  left: 900px;
+  top: 341px;
+  width: 124px;
+  height: 137px;
+	z-index: 10;
+}
+
+.pop_close2 {
 	position: absolute;
 	width: 1024px;
-	height: 670px;
+	height: 768px;
 	display: none;
-	z-index:10;
+	z-index: 20;
 }
