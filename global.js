@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 10){//number 3 is number of total slides present
+	if(nextSlideNo <= 2){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 10){
+	if(page_id <= 2){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 11){
+		if(page_id == 3){
             flag=1;
         }
 	}
@@ -385,34 +385,10 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><audio autoplay><source src="slide1/1.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/s1_1.png" width="1024" height="768" alt=""></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div><audio autoplay><source src="slide2/1.mp3" type="audio/mpeg"></audio>';
-	break;
-	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide8/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide9/1.jpg" width="1024" height="768" alt=""></div>';
-	break;
-	case 10:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide10/1.jpg" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s1_1"><img src="slide2/s1_1.png" width="1024" height="768" alt=""/></div><div class="s1_2" onclick="burger()"><img src="slide2/s1_2.png"/></div><div class="s1_3"><img src="slide2/s1_3.png"/></div><div class="s1_4" onclick="donut()"><img src="slide2/s1_4.png"/></div><div class="s1_5"><img src="slide2/s1_5.png"/></div><div class="s1_6" onclick="rice()"><img src="slide2/s1_6.png"/></div><div class="s1_7"><img src="slide2/s1_7.png"/></div><div class="s1_8" onclick="pizza()"><img src="slide2/s1_8.png"/></div><div class="s1_9"><img src="slide2/s1_9.png"/></div><div class="s1_10"><img src="slide2/s1_10.png"/></div><div class="s1_11"><img src="slide2/s1_11.png"/></div><div class="s1_12"><img src="slide2/s1_12.png"/></div><div class="s1_13"><img src="slide2/s1_13.png"/></div><div class="s1_14"><img src="slide2/s1_14.png" width="1024" height="768" alt=""/></div><audio id="slice" src="slide2/slice.mp3" type="audio/mpeg"></audio><audio id="fanfare" src="slide2/fanfare.mp3" type="audio/mpeg"></audio><input type="text" class="score" id="score" value="0" readonly>';
 	break;
 }
 
@@ -556,29 +532,76 @@ $(document).ready(function(){
 })
 
 
-
-/*--------------------- animation javascript -----------------------*/
-
-function pop_open1() {
-	$('.popup1').css("display","block");
-	$('.pop_close1').css("display","block");
-	$('.pop_open1').css("display","none");
+function burger() {
+	document.getElementById("slice").play();
+	$('.s1_2').css("display","none");
+	$('.s1_3').css("display","block");
+	var value = parseInt(document.getElementById('score').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value += 25;
+    document.getElementById('score').value = value;
+	
+	var textBox = document.getElementById("score");
+	if (textBox.value == 100) {
+	setTimeout(function(){
+		document.getElementById("fanfare").play();
+		$('.s1_14').css("display","block");
+		$('.s1_14').css("display","block");
+	}, 1000);
+	}
 }
 
-function pop_close1() {
-	$('.popup1').css("display","none");
-	$('.pop_close1').css("display","none");
-	$('.pop_open1').css("display","block");
+function donut() {
+	document.getElementById("slice").play();
+	$('.s1_4').css("display","none");
+	$('.s1_5').css("display","block");
+	var value = parseInt(document.getElementById('score').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value += 25;
+    document.getElementById('score').value = value;
+	
+	var textBox = document.getElementById("score");
+	if (textBox.value == 100) {
+	setTimeout(function(){
+		document.getElementById("fanfare").play();
+		$('.s1_14').css("display","block");
+	}, 1000);
+	}
 }
 
-function pop_open2() {
-	$('.popup2').css("display","block");
-	$('.pop_close2').css("display","block");
-	$('.pop_open2').css("display","none");
+function rice() {
+	document.getElementById("slice").play();
+	$('.s1_6').css("display","none");
+	$('.s1_7').css("display","block");
+	var value = parseInt(document.getElementById('score').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value += 25;
+    document.getElementById('score').value = value;
+	
+	var textBox = document.getElementById("score");
+	if (textBox.value == 100) {
+	setTimeout(function(){
+		document.getElementById("fanfare").play();
+		$('.s1_14').css("display","block");
+	}, 1000);
+	}
 }
 
-function pop_close2() {
-	$('.popup2').css("display","none");
-	$('.pop_close2').css("display","none");
-	$('.pop_open2').css("display","block");
+function pizza() {
+	document.getElementById("slice").play();
+	$('.s1_8').css("display","none");
+	$('.s1_9').css("display","block");
+	var value = parseInt(document.getElementById('score').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value += 25;
+    document.getElementById('score').value = value;
+	
+	var textBox = document.getElementById("score");
+	if (textBox.value == 100) {
+	setTimeout(function(){
+		document.getElementById("fanfare").play();
+		$('.s1_14').css("display","block");
+	}, 1000);
+	}
 }
+
