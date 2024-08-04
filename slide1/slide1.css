@@ -12,10 +12,10 @@
 
 .s2 {
 	position: absolute;
-  left: 611px;
-  top: 332px;
-  width: 249px;
-  height: 85px;
+  left: 624px;
+  top: 259px;
+  width: 382px;
+  height: 39px;
 	animation: slideInUp 0.7s;
 	animation-delay: 0.1s;
 	animation-fill-mode: both;
@@ -24,11 +24,11 @@
 
 .s3 {
 	position: absolute;
-  left: 592px;
-  top: 375px;
-  width: 401px;
-  height: 179px;
-	animation: slideInRight 0.5s;
+  left: 557px;
+  top: 310px;
+  width: 449px;
+  height: 107px;
+	animation: slideInRight 0.7s;
 	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 3;
