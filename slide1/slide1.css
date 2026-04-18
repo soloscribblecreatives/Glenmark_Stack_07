@@ -1,47 +1,149 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
 
-.s1 {
+.background {
 	position: absolute;
-	width: 1024px;
-	height: 768px;
+	width: 1080px;
+	height: 810px;
 	z-index: 1;
 }
 
-.s2 {
+.takeCover {
 	position: absolute;
-  left: 624px;
-  top: 259px;
-  width: 382px;
-  height: 39px;
-	animation: slideInUp 0.7s;
-	animation-delay: 0.1s;
-	animation-fill-mode: both;
-	z-index: 4;
+  left: 868px;
+  top: 638px;
+  width: 44px;
+  height: 130px;
+	z-index: 10;
 }
 
-.s3 {
-	position: absolute;
-  left: 557px;
-  top: 310px;
-  width: 449px;
-  height: 107px;
-	animation: slideInRight 0.7s;
-	animation-delay: 0.5s;
-	animation-fill-mode: both;
-	z-index: 3;
+.hit_1, .hit_2, .hit_3, .hit_4, .hit_5, .hit_3_1, .hit_4_1, .hit_5_1, .hit_3_2, .hit_4_2, .hit_5_2  {
+  position: absolute;
+  width: 1080px;
+  height: 810px;
+  display: none;
+  z-index: 15;
 }
 
-.s4 {
+.hit_pop1 {
 	position: absolute;
-  left: 677px;
-  top: 360px;
-  width: 347px;
-  height: 59px;
-	animation: slideInRight 0.5s;
-	animation-delay: 1s;
-	animation-fill-mode: both;
-	z-index: 2;
+  left: 913px;
+  top: 638px;
+  width: 44px;
+  height: 130px;
+	z-index: 10;
+}
+
+.hit_pop2 {
+	position: absolute;
+  left: 958px;
+  top: 638px;
+  width: 44px;
+  height: 130px;
+	z-index: 10;
+}
+
+.hit_pop3 {
+	position: absolute;
+  left: 353px;
+  top: 318px;
+  width: 157px;
+  height: 404px;
+	z-index: 10;
+}
+
+.hit_pop4 {
+	position: absolute;
+  left: 101px;
+  top: 596px;
+  width: 229px;
+  height: 95px;
+  display: none;
+	z-index: 30;
+}
+
+.hit_pop5 {
+	position: absolute;
+  left: 101px;
+  top: 596px;
+  width: 229px;
+  height: 95px;
+  display: none;
+	z-index: 30;
+}
+
+.hit_pop3_1 {
+	position: absolute;
+  left: 527px;
+  top: 318px;
+  width: 157px;
+  height: 404px;
+	z-index: 10;
+}
+
+.hit_pop4_1 {
+	position: absolute;
+  left: 101px;
+  top: 596px;
+  width: 229px;
+  height: 95px;
+  display: none;
+	z-index: 30;
+}
+
+.hit_pop5_1 {
+	position: absolute;
+  left: 101px;
+  top: 596px;
+  width: 229px;
+  height: 95px;
+  display: none;
+	z-index: 30;
+}
+
+.hit_pop3_2 {
+	position: absolute;
+  left: 701px;
+  top: 318px;
+  width: 157px;
+  height: 404px;
+	z-index: 10;
+}
+
+.hit_pop4_2 {
+	position: absolute;
+  left: 101px;
+  top: 596px;
+  width: 229px;
+  height: 95px;
+  display: none;
+	z-index: 30;
+}
+
+.hit_pop5_2 {
+	position: absolute;
+  left: 101px;
+  top: 596px;
+  width: 229px;
+  height: 95px;
+  display: none;
+	z-index: 30;
+}
+
+.hit_close1 {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 25;
+}
+
+.hit_close2 {
+	position: absolute;
+	width: 1080px;
+	height: 810px;
+	display: none;
+	z-index: 25;
 }
